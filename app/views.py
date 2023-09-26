@@ -1,9 +1,10 @@
 from django.http import HttpResponse
 from twilio.rest import Client
 from django.views.decorators.csrf import csrf_exempt
+import os
 
-account_sid = 'AC63f3551ef42e0973953c04a91e75a53f'
-auth_token = 'b8f9ffce10e6d6b51a54e024fc067b72'
+account_sid = os.environ.get("ACCOUNT_SID")
+auth_token = os.environ.get("AUTH_TOKEN")
 client = Client(account_sid, auth_token)
 
 
