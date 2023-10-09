@@ -5,3 +5,5 @@ class Message(models.model):
     title = model.charfield()    
     
     
+    
+    
