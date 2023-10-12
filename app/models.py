@@ -8,3 +8,6 @@ class Message(models.model):
     
     
     
+    
+    
+    
